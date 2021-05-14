@@ -1,0 +1,168 @@
+table{
+    width: 100%;
+ 
+}
+
+th{
+    height: 2rem;
+    background-color: rgb(67, 155, 161);
+    text-align: left;
+    padding-left: 1rem;
+    color: azure;
+}
+
+#tabla tr:nth-child(even)
+{
+    background-color: #e7e3e3;
+}
+
+
+
+.contenedorDatos{
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: fixed;    
+    top:30%;
+    left: 25%;
+    background-color: rgb(240, 245, 247);
+    width: 40rem;
+    height: 20rem;
+    box-shadow: 3px 3px 3px 3px rgba(173, 173, 173, 0.40);
+}
+
+div[visible = "1"]{
+    visibility: visible;
+    animation: mostrar 0.3s;
+}
+
+div[visible = "0"]{
+   visibility: hidden;
+    
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible; 
+}
+
+@keyframes mostrar{
+    from {top: 0%}
+    to {top: 30%}
+}
+
+#spinner{
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.582);
+    padding-left: 35rem;
+    padding-top: 10rem;
+    height: 200rem;
+    width: 200rem;
+}
+
+
+.conError{
+    border: 3px red solid;    
+}
+
+.sinError{
+    border: 3px black;    
+}
+
+#divBotones{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#btnSalir{
+    margin: 2px 0 2px 10px;
+    background-color: rgb(221, 90, 90);
+    color: white;
+}
+
+#btnModificar{
+    color: white;
+    background-color: rgb(25, 192, 109);
+    width:8rem;
+    height:2rem;
+    border-radius: 10px;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+#btnModificar:hover{
+    background-color: green;    
+}
+
+#btnEliminar{
+    color: white;
+    background-color: rgb(221, 90, 90);
+    width:8rem;
+    height:2rem;
+    border-radius: 10px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+#btnSalir:hover{
+    background-color: red;
+}
+
+#btnEliminar:hover{
+    background-color: red;
+}
+
+input[type="text"]{
+    width:95%;
+    height: 2rem;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin: 5px 0 5px 7px;
+    padding: 10px 5px;
+}
+
+input[type="date"]{
+    width:95%;
+    height: 2rem;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin: 5px 0 5px 7px;
+    padding: 10px 5px;
+}
+
+select{
+    width:95%;
+    height: 2rem;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin: 5px 0 5px 7px;
+    padding-left: 3px;   
+}
+
+label{
+    font-weight: bolder;
+    margin-left: 8px;
+}
+
+#labelMañana{
+    font-weight: normal;
+}
+
+#labelNoche{
+    font-weight: normal;
+}
+
+.labelError{
+    color: red;
+}
+
+.labelOK{
+    color: black;
+}

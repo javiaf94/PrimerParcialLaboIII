@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript" src="./js/parcial.js"></script>    
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div id="divContDatos" class="contenedorDatos" visible="0">
+
+        <div id="divSalir">
+            <input type="button" value="x" id="btnSalir">            
+        </div>
+
+        <div>
+            <label for="txtNombre">Nombre</label>
+        </div>
+
+        <div id="divNombre">
+            <input type="text" id="txtNombre">
+        </div>
+
+        <div id="divCuatrimestre">
+            <label for="selectCuatri">Cuatrimestre</label>
+            <select name="cuatrimestre" id="selectCuatri" disabled>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+        </div>
+
+        <div>
+            <label for="txtFecha">Fecha Final</label>
+        </div>
+
+        <div id="divFecha">
+            <input type="date" id="txtFecha" form>
+        </div>
+
+        <div>
+            <label>Turno</label>
+        </div>
+
+        <div>
+            <input type="radio" id="radioMañ" name="turno" value="Mañana">      
+            <label for="radioMañ" id="labelMañana">Mañana</label>
+        </div>
+
+        <div>
+            <input type="radio" id="radioNoch" name="turno" value="Noche">
+            <label for="radioNoch" id="labelNoche">Noche</label>
+        </div>
+
+
+        <div id="divBotones">
+            <div>
+                <input type="button" value="Eliminar" id="btnEliminar">
+            </div>
+
+            <div>
+                <input type="button" value="Modificar" id="btnModificar">
+            </div>
+
+        </div>
+        
+    </div>
+
+    <div id="spinner" class="invisible"><img src="./img/spinner.gif" alt="Be patient..." /></div>
+
+    <table id="tabla">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Cuatrimestre</th>
+                <th>FechaFinal</th>
+                <th>Turno</th>
+            </tr>
+        </thead>
+        <tbody id="tCuerpo">
+
+        </tbody>
+    </table>
+</body>
+</html>
